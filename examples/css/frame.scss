@@ -1,0 +1,39 @@
+.#{$prefix}-my-app{
+  margin: 0 auto;
+  
+  .#{$prefix}-module-all {
+    position: absolute;
+    width: $page-width;
+    top: $nav-height + 20px;
+    // bottom: $footer-height + 20px;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -$page-width/2;
+
+    .#{$prefix}-c-side-menu {
+      @extend %absolute-position;
+      width: 206px;
+      right: auto;
+      overflow: auto;
+    }
+
+    .router-content {
+      @extend %absolute-position;
+      right: auto;
+      width: $page-width - 230px;
+      right: auto;
+      left: 230px;
+      overflow: auto;
+      padding: 0 20px;
+    }
+
+    &.no-left-menu {
+      .router-content {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+
+@include scroll-bar;

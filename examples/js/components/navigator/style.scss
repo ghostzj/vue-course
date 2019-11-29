@@ -1,0 +1,64 @@
+.#{$prefix}-c-navigator{
+  font-size: $font-14;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid $clr-divider-color;
+  background-color: $clr-bg-page-color;
+  box-shadow: 0 0 5px rgba(0,0,0,.05);
+
+  ul {
+    list-style: none;
+    display: flex;
+    height: $nav-height;
+    line-height: $nav-height;
+    width: $page-width;
+    margin: 0 auto;
+  }
+
+  li {
+    flex: 50% 1 1;
+    text-align: center;
+    font-size: $font-16;
+    color: $clr-sub-color;
+    cursor: pointer;
+    @include transition(all .5s ease);
+    overflow: hidden;
+   
+    .text-inner {
+      display: inline-block;
+      padding: 0 10px;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: $clr-error-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all .5s ease-in-out;
+        opacity: 0;
+      }  
+    }
+
+    &:hover {
+      .text-inner {
+        color: $clr-error-color;
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+
+    &.actived {
+      .text-inner {
+        color: $clr-error-color;
+        &:after {
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
