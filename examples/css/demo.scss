@@ -1,0 +1,42 @@
+.flex {
+  display: flex;
+  align-items: center;
+  .block {
+    flex: 1;
+  }
+}
+.data-binding-demo-1 {
+  display: flex;
+  align-items: center;
+  .input {
+    flex: 1;
+  }
+  .textarea {
+    flex: 1;
+  }
+}
+.data-binding-demo-2, .data-binding-demo-3, .data-binding-demo-4 {
+  display: flex;
+  .checkbox1, .radio, .select {
+    flex: 1;
+  }
+  .checkbox2 {
+    flex: 2;
+  }
+  input, label {
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+}
+
+.used-directived-demo-3 {
+
+  .flex {
+    margin-bottom: 20px;
+  }
+  li {
+    list-style: none;
+  }
+
+}

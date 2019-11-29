@@ -128,7 +128,7 @@ export default {
     },
 
     iconClass() {
-      return this.isExpanded ? 'hf-ui-icon ui-icon-arrowup' : 'hf-ui-icon ui-icon-arrowdown';
+      return this.isExpanded ? 'el-icon-caret-top' : 'el-icon-caret-bottom';
     },
 
     controlText() {

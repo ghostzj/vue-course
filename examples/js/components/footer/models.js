@@ -11,6 +11,7 @@ function getSkipIndexList(matchName, navList, indexList) {
 }
 
 export function matchIndexListFromPath(path, navList) {
+  console.log('1111111', path, navList);
   const indexList = []
   const fullModuleName = path.replace(/\//g, '_').substr(1, path.length - 1)
   const splitName = fullModuleName.split('_')

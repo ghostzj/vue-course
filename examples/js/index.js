@@ -1,5 +1,7 @@
 /* global Vue */
 // import uiAdapt from 'utils/mobile-adapt'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import styles from '../css/index.scss'
 import router from './router'
 import { setInitialStates } from './store/state'
@@ -12,6 +14,7 @@ const state = setInitialStates({ appPrefix })
 const store = getStore(state)
 
 // uiAdapt(window, document, 750)
+Vue.use(ElementUI);
 
 Vue.component('demo-block', DemoBlock)
 

@@ -10,84 +10,108 @@ export default [
         module: 'Guide_DataBinding',
         path: '/guide/data-binding',
         label: '双向数据绑定',
-        component: 'DataBinding'
+        component: 'DataBinding',
+        next: '1_0_1',
+        // prev: '1_0_6',
       },
       {
         id: '102',
         module: 'Guide_UsedDirective',
         path: '/guide/used-directive',
         label: '常用指令',
-        component: 'UsedDirective'
+        component: 'UsedDirective',
+        next: '1_0_2',
+        prev: '1_0_0',
       },
       {
         id: '103',
         module: 'Guide_StyleBind',
         path: '/guide/style-bind',
         label: '样式绑定',
-        component: 'StyleBind'
+        component: 'StyleBind',
+        next: '1_0_3',
+        prev: '1_0_1',
       },
       {
         id: '104',
         module: 'Guide_EventHandle',
         path: '/guide/event-handle',
         label: '事件处理',
-        component: 'EventHandle'
+        component: 'EventHandle',
+        next: '1_0_4',
+        prev: '1_0_2',
       },
       {
         id: '105',
         module: 'Guide_Attribute',
         path: '/guide/attribute',
         label: '属性方法',
-        component: 'Attribute'
+        component: 'Attribute',
+        next: '1_0_5',
+        prev: '1_0_3',
       },
       {
         id: '106',
         module: 'Guide_Component',
         path: '/guide/component',
         label: '组件',
-        component: 'Component'
+        component: 'Component',
+        next: '1_0_6',
+        prev: '1_0_4',
       },
       {
         id: '107',
         module: 'Guide_Vuex',
         path: '/guide/vuex',
         label: '状态管理 Vuex',
-        component: 'Vuex'
+        component: 'Vuex',
+        next: '1_0_7',
+        prev: '1_0_5',
       },
       {
         id: '108',
         module: 'Guide_Router',
         path: '/guide/router',
         label: '路由 vue-router',
-        component: 'Router'
+        component: 'Router',
+        next: '1_0_8',
+        prev: '1_0_6',
       },
       {
         id: '109',
         module: 'Guide_Axios',
         path: '/guide/axios',
         label: '异步请求 axios',
-        component: 'Axios'
+        component: 'Axios',
+        next: '1_0_9',
+        prev: '1_0_7',
       },
       {
         id: '110',
         module: 'Guide_Eslint',
         path: '/guide/eslint',
         label: 'Eslint',
-        component: 'Eslint'
+        component: 'Eslint',
+        next: '1_0_10',
+        prev: '1_0_8',
       },
       {
         id: '111',
         module: 'Guide_Directory',
         path: '/guide/directory',
         label: '目录结构',
-        component: 'Directory'
+        component: 'Directory',
+        next: '1_0_11',
+        prev: '1_0_9',
       },
       {
         id: '112',
         module: 'Guide_TechnologyRelated',
         path: '/guide/technology-related',
         label: '相关技术',
-        component: 'TechnologyRelated'
+        component: 'TechnologyRelated',
+        // next: '1_0_5',
+        prev: '1_0_10',
       }
     ]
   },
