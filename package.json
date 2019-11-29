@@ -97,7 +97,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/appletxm/hf-vue-h5.git"
+    "url": "https://github.com/ghostzj/vue-course.git"
   },
   "keywords": [
     "webpack4",
@@ -111,7 +111,7 @@
   "author": "appletxm & hf front-end crew",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/appletxm/hf-vue-h5/issues"
+    "url": "https://github.com/ghostzj/vue-course.git"
   },
   "node": {
     "version": ">=8.3"

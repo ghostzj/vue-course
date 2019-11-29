@@ -1,7 +1,18 @@
 import navigatorList from '../app/navigator-list'
 
 const MenuRoutes = {
-  Principle: () => import(/* webpackChunkName: "DocPrinciple" */ 'docs/Principle.md'),
+  DataBinding: () => import(/* webpackChunkName: "DocDataBinding" */ 'docs/data-binding.md'),
+  UsedDirective: () => import(/* webpackChunkName: "UsedDirective" */ 'docs/used-directive.md'),
+  StyleBind: () => import(/* webpackChunkName: "StyleBind" */ 'docs/style-bind.md'),
+  EventHandle: () => import(/* webpackChunkName: "EventHandle" */ 'docs/event-handle.md'),
+  Attribute: () => import(/* webpackChunkName: "Attribute" */ 'docs/Attribute.md'),
+  Component: () => import(/* webpackChunkName: "Component" */ 'docs/component.md'),
+  Vuex: () => import(/* webpackChunkName: "Vuex" */ 'docs/vuex.md'),
+  Router: () => import(/* webpackChunkName: "Router" */ 'docs/router.md'),
+  Axios: () => import(/* webpackChunkName: "Axios" */ 'docs/axios.md'),
+  Eslint: () => import(/* webpackChunkName: "Eslint" */ 'docs/eslint.md'),
+  Directory: () => import(/* webpackChunkName: "Directory" */ 'docs/directory.md'),
+  TechnologyRelated: () => import(/* webpackChunkName: "TechnologyRelated" */ 'docs/technology-related.md'),
 }
 
 function decorateRouteItem(item) {
