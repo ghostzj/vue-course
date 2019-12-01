@@ -129,7 +129,106 @@
 :::
 
 ### v-bind
+:::demo v-bind  主要用于属性绑定，比方你的class属性，style属性，value属性，href属性等等，只要是属性，就可以用v-bind指令进行绑定。
+
+```html
+<div>
+  <div class="flex">
+    <div class="block">
+      <p>完整语法</p>
+      <a v-bind:href="url">百度 v-bind:href</a>
+    </div>
+    <div class="block">
+      <p>缩写语法</p>
+      <a :href="url">百度 :href</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  export default {
+    data() {
+      return {
+        url: 'https://www.baidu.com/'
+      }
+    },
+  }
+</script>
+```
+:::
 
 ### v-on
+:::demo v-on  主要用于方法绑定。
+
+```html
+<div>
+  <div class="flex">
+    <div class="block">
+      <p>完整语法</p>
+      <button v-on:click="btnClick">button click v-on:click</button>
+    </div>
+    <div class="block">
+      <p>缩写语法</p>
+      <button @click="btnClick">button click @click</button>
+    </div>
+    <div class="block">
+      <p>缩写语法</p>
+     <input v-model="message" placeholder="请输入" @input="inputChange"/>
+    </div>
+  </div>
+</div>
+
+<script>
+  export default {
+    data() {
+      return {
+        message: ''
+      }
+    },
+    methods: {
+      btnClick() {
+        alert('button click');
+      },
+      inputChange() {
+        console.log('v-on input change: ', this.message);
+      }
+    }
+  }
+</script>
+```
+:::
 
 ### v-text、v-html
+:::demo v-text  更新元素的textContent v-html 绑定html。
+
+```html
+<div>
+  <div class="flex">
+    <div class="block">
+      <p>v-text</p>
+      <button v-on:click="btnClick" v-text="message"></button>
+    </div>
+    <div class="block">
+      <p>v-html</p>
+      <button @click="btnClick" v-html="msgHtml"></button>
+    </div>
+  </div>
+</div>
+
+<script>
+  export default {
+    data() {
+      return {
+        message: 'hello world',
+        msgHtml: '<i class="el-icon-share"></i>'
+      }
+    },
+    methods: {
+      btnClick() {
+        alert('button click');
+      }
+    }
+  }
+</script>
+```
+:::
