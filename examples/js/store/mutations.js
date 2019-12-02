@@ -11,5 +11,9 @@ export default {
 
   [actionTypes.CURRENT_SUB_MODULE](state, value) {
     state.currentSubModule = value
+  },
+
+  [actionTypes.COUNT](state) {
+    state.count++
   }
 }

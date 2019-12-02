@@ -57,14 +57,16 @@ export default {
   methods: {
     $findPosItems(moduleList) {
       const currentItem = moduleList[moduleList.length - 1]
-      const { next, prev } = currentItem
-      const navList = this.$store.state.navigatorList
-      const nextItem = matchedPosItems(next, navList)
-      const prevItem = matchedPosItems(prev, navList)
-      this.next.label = nextItem.label
-      this.next.path = nextItem.path
-      this.prev.label = prevItem.label
-      this.prev.path = prevItem.path
+      if (currentItem) {
+        const { next, prev } = currentItem
+        const navList = this.$store.state.navigatorList
+        const nextItem = matchedPosItems(next, navList)
+        const prevItem = matchedPosItems(prev, navList)
+        this.next.label = nextItem.label
+        this.next.path = nextItem.path
+        this.prev.label = prevItem.label
+        this.prev.path = prevItem.path
+      }
     }
   }
 }
