@@ -1,9 +1,12 @@
 ## 目录结构
- v-on:
+
 ### 现有框架的目录结构
+目录解析
+:::demo
 
-### 最新框架的目录结构
-
-### vue 通用目录结构
-
-
+```html
+<div>
+  <img src="../assets/images/directory1.png"/>
+</div>
+```
+:::

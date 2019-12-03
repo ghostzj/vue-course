@@ -24,6 +24,7 @@ export default {
   components: {},
   data() {
     return {
+      a: '',
     }
   },
   computed: {},
@@ -39,6 +40,9 @@ export default {
   methods: {
     routerClick() {
       this.$router.push('/dynamic-router/888888');
+      if (this.a) {
+        //
+      }
     },
   }
 }
